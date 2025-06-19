@@ -1,0 +1,22 @@
+git clone https://github.com/vtjavatrainner/apar.git
+
+cd apar/
+
+git checkout -b feature/SCRUM-2-Loan-table (this is my branch)
+
+
+/d/Personal/Trainning/git_hub_repo/apar (feature/SCRUM-2-Loan-table)
+
+mkdir scripts
+
+created file scripts/INVOICE_DISCOUNT_LINK.sql
+
+git status
+
+git add scripts/
+
+git status ->  new file:   scripts/INVOICE_DISCOUNT_LINK.sql
+
+git commit -m "Created sql script for /INVOICE_DISCOUNT_LINK table"
+
+git push --set-upstream origin feature/SCRUM-2-Loan-table
