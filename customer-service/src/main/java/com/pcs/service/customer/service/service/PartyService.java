@@ -1,6 +1,6 @@
 package com.pcs.service.customer.service.service;
 
-import com.pcs.service.customer.service.PartyToPartyDTOMapper;
+import com.pcs.service.customer.service.mapper.PartyToPartyDTOMapper;
 import com.pcs.service.customer.service.dto.PartyPublicDTO;
 import com.pcs.service.customer.service.entity.Party;
 import com.pcs.service.customer.service.repository.PartyRepository;

@@ -1,4 +1,4 @@
-package com.pcs.service.customer.service;
+package com.pcs.service.customer.service.mapper;
 
 import com.pcs.service.customer.service.dto.PartyPublicDTO;
 import com.pcs.service.customer.service.entity.Party;
