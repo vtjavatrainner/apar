@@ -5,8 +5,8 @@ CREATE TABLE payments (
     amount             DECIMAL(10,2) NOT NULL CHECK (amount >= 0),
     rate_of_interest   DECIMAL(10,2),                            -- newly added column as per instruction
     payment_date       DATE NOT NULL,
-    debit_account_id   BIGINT NOT NULL,                          -- FK → accounts(id)
-    credit_account_id  BIGINT NOT NULL,                          -- FK → accounts(id)
+    debit_account_id   VARCHAR(200) NOT NULL,                    -- FK → accounts(id), changed from BIGINT
+    credit_account_id  VARCHAR(200) NOT NULL,                    -- FK → accounts(id), changed from BIGINT
     payment_type       VARCHAR(20) NOT NULL
                          CHECK (payment_type IN ('DISCOUNT_PAYMENT', 'LOAN_REPAYMENT')),
 
