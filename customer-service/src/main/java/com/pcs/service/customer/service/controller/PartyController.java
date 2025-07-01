@@ -26,8 +26,8 @@ public class PartyController {
 
 
     @GetMapping
-    public ResponseEntity<List<PartyPublicDTO>> getAllParties(){
-        List<PartyPublicDTO> allParties = partyService.getAllParties();
+    public ResponseEntity<List<PartyPublicDTO>> findAll(){
+        List<PartyPublicDTO> allParties = partyService.findAll();
         return ResponseEntity.ok(allParties);
     }
 

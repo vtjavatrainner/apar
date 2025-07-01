@@ -19,7 +19,7 @@ public class PartyService {
         this.partyRepository = partyRepository;
         this.partyToPartyDTOMapper = partyToPartyDTOMapper;
     }
-    public List<PartyPublicDTO> getAllParties(){
+    public List<PartyPublicDTO> findAll(){
         List<Party> allParties = partyRepository.findAll();
 
         return allParties.stream()
